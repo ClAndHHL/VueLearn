@@ -2,6 +2,7 @@
 <div id="blog-posts-events-demo">
   <div :style="{ fontSize: postFontSize + 'em' }">
     <div>1111</div>
+    <slot-test>slot content</slot-test>
     <custome-input v-model="searchText"></custome-input>
     <blog-post
       v-for="post in posts"
@@ -16,7 +17,7 @@
 <script>
 import BlogPost from "./BlogPost"
 import CustomeInput from "./CustomeInput"
-
+import SlotTest from "./SlotTest"
 
 export default {
     name: 'ChildEmitDemo',
@@ -30,7 +31,7 @@ export default {
                 ]
         }
     },
-    components:{BlogPost,CustomeInput},
+    components:{BlogPost,CustomeInput,SlotTest},
 }
 </script>
 
