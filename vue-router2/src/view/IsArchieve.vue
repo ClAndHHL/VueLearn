@@ -1,5 +1,7 @@
 <template>
-    <div>Is Archieve </div>
+    <div>Is Archieve 
+        <input type="text"/>
+    </div>
 </template>
 <style scoped>
     .div{
