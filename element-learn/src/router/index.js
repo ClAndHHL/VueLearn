@@ -4,6 +4,9 @@ import HelloWorld from '@/components/HelloWorld'
 import LayoutDemo from '@/views/layout/LayoutDemo'
 import ContainerDemo from '@/views/container/ContainerDemo'
 import ButtonDemo from '@/views/button/ButtonDemo'
+import Form1 from '@/views/form/Form1'
+import SelectForm from '@/views/form/SelectForm'
+import SwitchDemo from '@/views/form/SwitchDemo'
 
 Vue.use(Router)
 
@@ -28,6 +31,21 @@ export default new Router({
       path: '/buttondemo',
       name: 'ButtonDemo',
       component: ButtonDemo
+    },
+    {
+      path: '/form1',
+      name: 'Form1',
+      component: Form1
+    },
+    {
+      path: '/selectform',
+      name: 'SelectForm',
+      component: SelectForm
+    },
+    {
+      path: '/switchdemo',
+      name: 'SwitchDemo',
+      component: SwitchDemo
     }
   ]
 })
