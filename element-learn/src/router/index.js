@@ -7,6 +7,8 @@ import ButtonDemo from '@/views/button/ButtonDemo'
 import Form1 from '@/views/form/Form1'
 import SelectForm from '@/views/form/SelectForm'
 import SwitchDemo from '@/views/form/SwitchDemo'
+import DateTimePicker from '@/views/form/DateTimePicker'
+import Upload from '@/views/form/Upload'
 
 Vue.use(Router)
 
@@ -46,6 +48,16 @@ export default new Router({
       path: '/switchdemo',
       name: 'SwitchDemo',
       component: SwitchDemo
+    },
+    {
+      path: '/datetimepicker',
+      name: 'DateTimePicker',
+      component: DateTimePicker
+    },
+    {
+      path: '/upload',
+      name: 'Upload',
+      component: Upload
     }
   ]
 })
