@@ -31,6 +31,30 @@
     <el-row>
         <div>{{imageUrl}}</div>
     </el-row>
+    <el-row>
+      <div class="block">
+        <span class="demonstration">默认不区分颜色</span>
+        <el-rate v-model="value1"></el-rate>
+      </div>
+      <div class="block">
+        <span class="demonstration">区分颜色</span>
+        <el-rate
+          v-model="value2"
+          show-text
+          :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
+        </el-rate>
+      </div>
+    </el-row>
+    <el-row>
+      <div class="block">
+        <span class="demonstration">有默认值</span>
+        <el-color-picker v-model="color1"></el-color-picker>
+      </div>
+      <div class="block">
+        <span class="demonstration">无默认值</span>
+        <el-color-picker v-model="color2"></el-color-picker>
+      </div>
+    </el-row>
 </div>
     
 </template>
@@ -41,6 +65,10 @@ export default {
       return {
         fileList: [{name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}, {name: 'food2.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}],
         imageUrl:"",
+        value2:4.8,
+        _value1:null,
+        color1: '#409EFF',
+        color2: null,
       };
     },
     methods: {
@@ -72,6 +100,19 @@ export default {
         return isJPG && isLt2M;
       }
     
+    },
+    computed:{
+      value1:{
+        get(){
+          return this._value1;
+        },
+        set(newValue){
+          this._value1 = newValue;
+          console.log(this._value1);
+          console.log(this.color2);
+        }
+      }
+      
     }
 }
 </script>

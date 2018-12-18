@@ -9,6 +9,7 @@ import SelectForm from '@/views/form/SelectForm'
 import SwitchDemo from '@/views/form/SwitchDemo'
 import DateTimePicker from '@/views/form/DateTimePicker'
 import Upload from '@/views/form/Upload'
+import ElForm from '@/views/form/ElForm'
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/upload',
       name: 'Upload',
       component: Upload
+    },
+    {
+      path: '/elform',
+      name: 'ElForm',
+      component: ElForm
     }
   ]
 })
