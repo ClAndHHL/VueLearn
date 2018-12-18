@@ -11,6 +11,8 @@ import DateTimePicker from '@/views/form/DateTimePicker'
 import Upload from '@/views/form/Upload'
 import ElForm from '@/views/form/ElForm'
 import Table from '@/views/data/Table'
+import Tag from '@/views/data/Tag'
+import Tree from '@/views/data/Tree'
 
 Vue.use(Router)
 
@@ -70,6 +72,16 @@ export default new Router({
       path: '/table',
       name: 'Table',
       component: Table
+    },
+    {
+      path: '/tag',
+      name: 'Tag',
+      component: Tag
+    },
+    {
+      path: '/tree',
+      name: 'Tree',
+      component: Tree
     }
   ]
 })
