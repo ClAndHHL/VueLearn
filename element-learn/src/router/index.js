@@ -10,6 +10,7 @@ import SwitchDemo from '@/views/form/SwitchDemo'
 import DateTimePicker from '@/views/form/DateTimePicker'
 import Upload from '@/views/form/Upload'
 import ElForm from '@/views/form/ElForm'
+import Table from '@/views/data/Table'
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
       path: '/elform',
       name: 'ElForm',
       component: ElForm
+    },
+    {
+      path: '/table',
+      name: 'Table',
+      component: Table
     }
   ]
 })
