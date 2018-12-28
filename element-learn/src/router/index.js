@@ -13,6 +13,11 @@ import ElForm from '@/views/form/ElForm'
 import Table from '@/views/data/Table'
 import Tag from '@/views/data/Tag'
 import Tree from '@/views/data/Tree'
+import Loading from '@/views/notice/Loading'
+import NavMenu from '@/views/nav/NavMenu'
+import Tabs from '@/views/nav/Tabs'
+import BreadCrumb from '@/views/nav/BreadCrumb'
+
 
 Vue.use(Router)
 
@@ -82,6 +87,26 @@ export default new Router({
       path: '/tree',
       name: 'Tree',
       component: Tree
+    },
+    {
+      path: '/loading',
+      name: 'Loading',
+      component: Loading
+    },
+    {
+      path: '/navmenu',
+      name: 'NavMenu',
+      component: NavMenu
+    },
+    {
+      path: '/tabs',
+      name: 'Tabs',
+      component: Tabs
+    },
+    {
+      path: '/breadcrumb',
+      name: 'BreadCrumb',
+      component: BreadCrumb
     }
   ]
 })
