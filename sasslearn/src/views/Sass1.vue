@@ -5,7 +5,7 @@
         </h3>    
         <P>this is p under header</P>
         <P>this is p under header2</P>
-        <div>
+        <div id = "div2">
             this is div
         </div>
         <P>this is p under header3</P>
@@ -44,6 +44,14 @@ export default {
     // article dl > dt { color: #333 }
     // article dl > dd { color: #555 }
     // nav + article { margin-top: 0 }
-    
+
+
+    #div2{
+        border: 1px solid #ccc {
+            left: 10px;
+            right: 10px;
+        }
+    }
+
 </style>
 
