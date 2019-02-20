@@ -26,6 +26,12 @@
             <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
             <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
         </el-row>
+        <br/>
+        <el-row>
+            <el-col :span="10">label:</el-col>
+            <el-col :span="10"><input placeholder="this is input"/></el-col>
+            <el-col :span="4"><el-button>add</el-button></el-col>
+        </el-row>
     </div>
 </template>
 
