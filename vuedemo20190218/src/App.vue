@@ -6,10 +6,21 @@
       <router-link to="/elementdemo1">elementdemo1</router-link>|
       <router-link to="/layoutdemo">layoutdemo</router-link>|
       <router-link to="/todolist">todolist</router-link>|
+      <router-link to="/modedemo">modemode</router-link>|
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  data(){
+    return{
+      good:"sss",
+    }
+  },
+}
+</script>
 
 <style lang="scss">
 #app {

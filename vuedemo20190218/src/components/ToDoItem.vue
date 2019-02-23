@@ -9,12 +9,20 @@
 <script>
 export default {
     props:{
-        title:"",
+        title:{
+            type: String,
+            default:"",
+        },
     },
     data(){
         return{
 
         }
     },
+    methods:{
+        ppp(){
+            console.log("to都list " + this.title);
+        },
+    }
 }
 </script>

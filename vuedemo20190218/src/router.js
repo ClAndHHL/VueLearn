@@ -45,5 +45,10 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/ToDoList.vue')
     },
+    {
+      path: '/modedemo',
+      name: 'modedemo',
+      component: () => import(/* webpackChunkName: "about" */ './views/ModeDemo.vue')
+    },
   ]
 })

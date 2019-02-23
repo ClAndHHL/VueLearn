@@ -16,6 +16,7 @@
                 v-for="(todo, index) in todos"
                 v-bind:key="todo.id"
                 v-bind:title="todo.title"
+                :ref="todo.ref"
                 v-on:remove="todos.splice(index, 1)"
                 ></li>
             </ul>
@@ -33,14 +34,17 @@ export default {
             todos: [
             {
                 id: 1,
+                ref:"index1",
                 title: 'Do the dishes',
             },
             {
                 id: 2,
+                ref:"index2",
                 title: 'Take out the trash',
             },
             {
                 id: 3,
+                ref:"index3",
                 title: 'Mow the lawn'
             }
             ],
@@ -55,6 +59,9 @@ export default {
         })
         this.newTodoText = ''
         }
+    },
+    created(){
+        this.$refs.index2.ppp();
     },
     components:{
         TodoItem
