@@ -3,13 +3,32 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Vuex from 'vuex'
+import mapState from 'vuex'
+import './config/rem'
+
+Vue.use(Vuex)
 
 Vue.config.productionTip = false
+
+const store = new Vuex.Store(
+  {
+    state:{
+
+    },
+    mutations:{
+      increase(state){
+
+      }
+    },
+  }
+)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
