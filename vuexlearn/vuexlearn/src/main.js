@@ -3,11 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Vuex from 'vuex'
+import store from './store/'
 import mapState from 'vuex'
 import './config/rem'
 
-Vue.use(Vuex)
+
 
 Vue.config.productionTip = false
 
