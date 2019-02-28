@@ -1,7 +1,7 @@
 
 
 export default{
-    addNum(){
+    addNum({ commit, state }){
         commit("ADD_NUM",1);
     },
 }
